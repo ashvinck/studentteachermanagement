@@ -26,12 +26,12 @@ function App() {
       <div id="wrapper">
         <SideBar />
         {/* Content Wrapper */}
-        <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content-wrapper" className="d-flex flex-column">
           {/*Main Content */}
           <div id="content">
             <TopBar />
             {/* Begin Page Content  */}
-            <div class="container-fluid">
+            <div className="container-fluid">
               <Routes>
                 <Route path="/" element={<Content />} />
                 <Route path="/timetable" element={<Timetable />} />

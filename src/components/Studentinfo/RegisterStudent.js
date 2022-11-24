@@ -44,15 +44,15 @@ export const RegisterStudent = ({ stuinfo, setStuInfo }) => {
                             </div>
                         </div>
                         {/* Gender */}
-                        <div class="col-md-3 position-relative">
-                            <label for="validationTooltip04" class="form-label">Gender</label>
-                            <select class="form-select" id="validationTooltip04" onChange={(evt) => { tempObj.Gender = evt.target.value }} required>
+                        <div className="col-md-3 position-relative">
+                            <label for="validationTooltip04" className="form-label">Gender</label>
+                            <select className="form-select" id="validationTooltip04" onChange={(evt) => { tempObj.Gender = evt.target.value }} required>
                                 <option selected disabled value="">Choose...</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Prefer not to say">Prefer not to say</option>
                             </select>
-                            <div class="invalid-tooltip">
+                            <div className="invalid-tooltip">
                                 Please select a Gender.
                             </div>
                         </div>

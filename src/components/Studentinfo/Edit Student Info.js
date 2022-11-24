@@ -26,7 +26,7 @@ export const EditStudentInfo = ({ data, id, stuinfo, setStuInfo }) => {
             <button className="EditButton" onClick={handleShow} data-toggle="modal" data-target="#exampleModal"><FontAwesomeIcon icon={faPen} /></button>
             {/* Button trigger modal */}
             {/* Modal  */}
-            <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -62,15 +62,15 @@ export const EditStudentInfo = ({ data, id, stuinfo, setStuInfo }) => {
                                     </div>
                                 </div>
                                 {/* Gender */}
-                                <div class="col-md-3 position-relative">
-                                    <label for="validationTooltip04" class="form-label">Gender</label>
-                                    <select class="form-select" id="validationTooltip04" onChange={(evt) => { tempObj.Gender = evt.target.value }} defaultValue={tempObj.Gender} required>
+                                <div className="col-md-3 position-relative">
+                                    <label for="validationTooltip04" className="form-label">Gender</label>
+                                    <select className="form-select" id="validationTooltip04" onChange={(evt) => { tempObj.Gender = evt.target.value }} defaultValue={tempObj.Gender} required>
                                         <option selected disabled value="">Choose...</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         <option value="Prefer not to say">Prefer not to say</option>
                                     </select>
-                                    <div class="invalid-tooltip">
+                                    <div className="invalid-tooltip">
                                         Please select a Gender.
                                     </div>
                                 </div>
